@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" href="../css/reset.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/list.css" type="text/css"/>
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<script src="../js/common/head.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.pagination.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" type="image/x-icon" href="../img/bg/favicon2.ico">
+	</head>
+	<body class="xiangying">
+		<!--头部-->
+		<div id="header">
+			<script type="text/javascript">
+				$.ajax({
+					url:"common/header.html",
+					async:false,
+					type:"get",
+					dataType:"html",
+					success:function(msg){
+						$("#header").html(msg)
+					}
+				})					
+			</script>
+		</div>
+		<!--内容-->
+		<div id="content">
+			<div class="main">
+				<div class="filter_box">
+					<div class="filter_tit">
+						<span>共 <strong>0</strong> 个产品</span>
+					</div>
+					<div class="inner">
+						<div class="inner_j">
+							<span class="jiage">
+								价格:
+							</span>
+							<div class="inner_b">
+								<div><a href="javascriptt:void(64);">1500元以下(<span>0</span>)</a></div>
+								<div><a href="javascript:;">1500元 - 3200元(<span>0</span>)</a></div>
+								<div><a href="javascript:;">3200元 - 5200元(<span>0</span>)</a></div>
+								<div><a href="javascript:;">5200元以上(<span>0</span>)</a></div>
+								<div class="quanbu"><a href="javascript:;">全部产品</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="funcbar">
+					<a class="abg" href="javascript:;">默认排序</a>
+					<a href="javascript:;">销量</a>
+					<a href="javascript:;">价格</a>
+					<a href="javascript:;">评分</a>
+					<a href="javascript:;">上架时间</a>
+					<div class="pro_search">
+						<input type="text" id="gjz" value="" placeholder="请输入要搜索的关键字"/>
+						<a href="javascript:;" class="pro_search_btn">搜索</a>
+					</div>
+				</div>
+				<div class="kong">
+					
+				</div>
+				<div class="goodslist">
+					<ul>
+					</ul>
+					<div id="page">
+						
+					</div>
+					<div class="rongqi" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer">
+			<script type="text/javascript">
+				
+				$.ajax({
+					url:"common/footer.html",
+					async:false,
+					type:"get",
+					dataType:"html",
+					success:function(msg){
+						$("#footer").html(msg)
+					}
+				})				
+			</script>
+		</div>
+	</body>
+</html>

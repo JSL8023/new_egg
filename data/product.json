@@ -1,0 +1,12 @@
+{
+	"cp0":{
+		"img":{
+			"aa":"../img/product/aa.jpg"
+		},
+		"img0":"../img/product/a1.jpg",
+		"img1":"../img/product/a2.jpg",
+		"img2":"../img/product/a3.jpg",
+		"img3":"../img/product/a4.jpg",
+		"img4":"../img/product/a5.jpg"
+	}
+}

@@ -1,0 +1,48 @@
+/*头部新用户注册样式*/
+.head_title{border-left: 1px solid #D9D9D9;font: 24px/49px microsoft yahei;margin: 5px 0 0 25px;padding-left: 26px;width:130px;height: 50px;position: absolute;top: 15px;left: 320px;}
+
+/*中间注册样式*/
+#content{width: 100%;background: #F9F9F9;}
+.reg{width: 960px;margin: 0 auto;height: 450px;}
+/*.regf{width: 750px;background: #fff;float: left;}
+.reg_r{width: 210px;background: #f0f;float: right;}*/
+.wraper{width: 960px;height: 30px;}
+.wraper .dl{float: right;line-height: 30px;}
+.reg_box{height: 491px;overflow: hidden;}
+
+/*注册进度图片*/
+.step1bg{margin: 20px auto;background: url(../img/bg/register_step.png) no-repeat center;width: 655px;height: 30px;background-position: 0 0}
+
+/*注册表单1*/
+.reg_con{position: relative;text-align: center;margin-top: 40px;}
+.reg_con_box{text-align: center;position: relative;margin-bottom: 25px;width: 960px;}
+.reg_con label{display: inline-block;width: 66px;text-align: left;cursor: default;}
+.reg_txt_0{height: 30px;width: 255px;line-height: 30px;border: 1px solid #cfcfcf;text-indent: 5px;overflow: hidden;background: #f9f9f9;outline: medium;}
+.reg_txt_1{height: 30px;width: 130px;line-height: 30px;border: 1px solid #cfcfcf;text-indent: 5px;overflow: hidden;background: #f9f9f9;text-align: center;margin-right: 5px;outline: medium;}
+.code{height: 32px;width: 115px;display: inline-block;background: #fff;vertical-align: middle}
+.next_step1_btn{width: 250px;height: 32px;margin-left: 391px;line-height: 32px;text-align: center;border: 1px solid #f60;cursor: pointer;background: #f60;color: #fff;letter-spacing: 10px;margin: 0 auto;font-size: 18px;}
+.next_step2_btn{width: 250px;height: 32px;margin-left: 391px;line-height: 32px;text-align: center;border: 1px solid #f60;cursor: pointer;background: #f60;color: #fff;letter-spacing: 10px;margin: 0 auto;font-size: 18px;}
+.next_step3_btn{width: 250px;height: 32px;margin-left: 391px;line-height: 32px;text-align: center;border: 1px solid #f60;cursor: pointer;background: #f60;color: #fff;letter-spacing: 10px;margin: 0 auto;font-size: 18px;}
+
+/*注册表单2*/
+.reg_con_box label.agree span{color: #f60;cursor: pointer;}
+
+/*注册表单3*/
+.agreemet_box{height: 345px;overflow: scroll;font-size: 14px;line-height: 30px;text-align: left;overflow-x: hidden;}
+
+/*报错*/
+label.error{background: url(../img/bg/icon_logoin_s.png) no-repeat 0 -39px;padding-left:15px;position:absolute;color: #f60;width: 300px;line-height: 13px;left: 650px;top: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

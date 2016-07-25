@@ -1,0 +1,136 @@
+{
+	"chanpin":{
+		"n0":{
+			"cp0":{
+				"img0":"../img/product/d1.jpg",
+				"img1":"../img/product/d2.jpg",
+				"img2":"../img/product/d3.jpg",
+				"img":{
+					"aa":"../img/product/dd.jpg"
+				}
+			},
+			"img":"../img/A1O-184-010-02.jpg",
+			"title":"Apple 苹果 iPad mini 4 WLAN版 MK6L2CH/A 16GB 金色",
+			"price":"¥2638.00"
+
+		},
+		"n1":{
+			"cp0":{
+				"img0":"../img/product/c1.jpg",
+				"img1":"../img/product/c2.jpg",
+				"img2":"../img/product/c3.jpg",
+				"img3":"../img/product/c4.jpg",
+				"img4":"../img/product/c5.jpg",
+				"img5":"../img/product/c6.jpg",
+				"img6":"../img/product/c7.jpg",
+				"img7":"../img/product/c8.jpg",
+				"img":{
+					"aa":"../img/product/cc.jpg"
+				}
+			},
+			"img":"../img/A28-800-6S1-10.jpg",
+			"title":"HUAWEI 华为 Mate8 NXT-AL10 香槟金 全网通版 TD-LTE 4G手机 双卡双待 内存4G+64G",
+			"price":"¥3199.00"
+		},
+		"n2":{
+			"cp0":{
+				"img0":"../img/product/b1.jpg",
+				"img1":"../img/product/b2.jpg",
+				"img2":"../img/product/b3.jpg",
+				"img3":"../img/product/b4.jpg",
+				"img":{
+					"aa":"../img/product/bb.jpg"
+				}
+			},
+			"img":"../img/A28-21K-6PV.jpg",
+			"title":"MI 小米 红米Note2 深灰色 移动联通定制版 TDD-LTE 4G手机 双卡双待 内存2G+16G",
+			"price":"¥869.00"
+		},
+		"n3":{
+			"cp0":{
+				"img0":"../img/product/c1.jpg",
+				"img1":"../img/product/c2.jpg",
+				"img2":"../img/product/c3.jpg",
+				"img3":"../img/product/c4.jpg",
+				"img4":"../img/product/c5.jpg",
+				"img5":"../img/product/c6.jpg",
+				"img6":"../img/product/c7.jpg",
+				"img7":"../img/product/c8.jpg",
+				"img":{
+					"aa":"../img/product/cc.jpg"
+				}
+			},
+			"img":"../img/A28-800.jpg",
+			"title":"HUAWEI 华为 P9 EVA-AL10 金色 全网通 TDD-LTE 双卡双待 4G手机 内存4GB+64GB",
+			"price":"¥3688.00"
+		},
+		
+		"n4":{
+			"cp0":{
+				"img0":"../img/product/a1.jpg",
+				"img1":"../img/product/a2.jpg",
+				"img2":"../img/product/a3.jpg",
+				"img3":"../img/product/a4.jpg",
+				"img4":"../img/product/a5.jpg",
+				"img":{
+					"aa":"../img/product/aa.jpg"
+				}
+			},
+			"img":"../img/A04-038-5DX-02.jpg",
+			"title":"Canon 佳能 EOS 6D 单反相机 套机 - 含 EF 24-70mm f/4L IS USM 标准变焦镜头",
+			"price":"¥14399.00"
+		},
+		
+		"n5":{
+			"cp0":{
+				"img0":"../img/product/e1.jpg",
+				"img1":"../img/product/e2.jpg",
+				"img2":"../img/product/e3.jpg",
+				"img3":"../img/product/e4.jpg",
+				"img":{
+					"aa":"../img/product/ee.jpg"
+				}
+			},
+			"img":"../img/A1I-184-01C_02.jpg",
+			"title":"Apple 苹果 MacBook Pro 15.4英寸 MJLQ2CH/A 银色 - i7-2.2GHz/16GB/256GB 闪存/Retina 显示屏",
+			"price":"¥12999.00"
+		}
+	},
+	
+	"banner":{
+		"n0":{
+			"img771":"../img/banner/771x245(0).jpg",
+			"img531":"../img/banner/531x245(0).jpg"
+		},
+		"n1":{
+			"img771":"../img/banner/771x245(1).jpg",
+			"img531":"../img/banner/531x245(1).jpg"
+		},
+		"n2":{
+			"img771":"../img/banner/771x245(2).jpg",
+			"img531":"../img/banner/531x245(2).jpg"
+		},
+		"n3":{
+			"img771":"../img/banner/771x245(3).jpg",
+			"img531":"../img/banner/531x245(3).jpg"
+		}
+	},
+	
+	"fang":{
+		"n0":{
+			"img":"../img/banner/226x241_1.jpg"
+		},
+		"n1":{
+			"img":"../img/banner/226x241_2.jpg"
+		},
+		"n2":{
+			"img":"../img/banner/226x241_3.jpg"
+		},
+		"n3":{
+			"img":"../img/banner/226x241_4.jpg"
+		},
+		"n4":{
+			"img":"../img/banner/226x241_5.jpg"
+		}
+	}
+}

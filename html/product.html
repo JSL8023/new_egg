@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>产品</title>
+		<link rel="stylesheet" href="../css/reset.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/product.css" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="../css/basefd.css"/>
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/common/head.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.jqzoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/product.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" type="image/x-icon" href="../img/bg/favicon2.ico">
+	</head>
+	<body class="xiangying">
+		<!--头部-->
+		<div id="header">
+			<script type="text/javascript">
+				$.ajax({
+					url:"common/header.html",
+					async:false,
+					type:"get",
+					dataType:"html",
+					success:function(msg){
+						$("#header").html(msg)
+					}
+				})					
+			</script>
+		</div>
+		<!--内容-->
+		<div id="content">
+			<div class="mianbaoxie">
+				<div class="wraper">
+					<div class="inner">
+						<a href="index.html">首页</a><span>></span><a href="list.html">数码产品</a><span>></span><strong>当前</strong>
+					</div>
+				</div>
+			</div>
+			<div class="pro_tabs">
+				<div class="pro_tabs_c">
+					<ul>
+						<li class="cur"><a href="javascript:void(0);" ref="#tab1" main="true" tabname="product" title="商品详情">商品详情</a></li>
+						<li><a href="javascript:void(0);" ref="#tab2" tabname="review" title="用户评论">用户评论</a></li>
+						<li><a href="javascript:void(0);" ref="#tab3" tabname="performance" title="具体参数">具体参数</a></li>
+						<li><a href="javascript:void(0);" ref="#tab4" tabname="wrantly" title="售后服务">售后服务</a></li>	
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="mainer">
+					<div class="tab1 tabl" style="display: block;">
+						<div class="goods_all">
+							<div class="goods_tp">
+								<div class="right-extra" style="margin:20px;">
+			<!--产品参数开始-->
+									<div>
+										<div id="preview" class="spec-preview">
+											<span class="jqzoom">
+											</span> 
+										</div>
+										<!--缩图开始-->
+										<div class="spec-scroll"> <a class="prev">&lt;</a> <a class="next">&gt;</a>
+											<div class="items">
+												<ul>
+												</ul>
+											</div>
+										</div>
+										<!--缩图结束-->
+									</div>
+								</div>
+							</div>
+							<div class="goods_xx">
+								<div class="goods_title">
+									<h1>xxxx</h1>
+									<p>xxx</p>
+								</div>
+								<div class="goods_info">
+									<ul>
+										<li>
+											<div class="goods_info_name">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</div>
+        									<div class="godds_info_data"><a href="javascript:;" title="Apple 苹果" target="_blank">杂牌</a></div>
+										</li>
+										<li>
+											<div class="goods_info_name">产品型号：</div>
+        									<div class="godds_info_data">NB6666</div>
+										</li>
+										<li class="goods_price_now">
+											<div class="goods_info_name">新&nbsp;&nbsp;蛋&nbsp;&nbsp;价：</div>
+											<div class="goods_q">$6666.00</div>
+										</li>
+										<li class="goods_info_support">
+    										<div class="goods_info_name">商品支持：</div>
+   											<div class="godds_info_data">
+       										<a href="javascript:void(0)" class="goods_info_promise_logo promise_seven_day_off" title="不支持7天无理由退换货">不支持无理由退</a>
+    										</div>
+										</li>
+										<li class="goods_info_cnts" id="buyQty">
+											<div class="goods_info_name">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</div>
+											<div class="godds_info_data posr">
+												<a class="plus_minus minus" href="javascript:void(0);" ref1="1">-</a>
+												<input class="num" type="text" value="1" maxlength="3" autocomplete="off">
+												<a class="plus_minus plus" href="javascript:void(0);" ref1="">+</a>
+												<span class="godds_cnts_tips"></span>       
+	        <span style="color:green">&nbsp;&nbsp;&nbsp;&nbsp;库存：有货</span>	
+											</div>
+										</li>
+									</ul>
+									<div class="goods_buy_btn">
+										<a href="javascript:;" class="goods_common_btn" id="goods_buy" >
+											立即购买
+										</a>
+										<a href="javascript:;" class="goods_common_btn" id="goods_cart" >
+											加入购物车
+										</a>
+									</div>
+								</div>
+								<div class="goods_otherinfo">
+									<img width="199" height="485" src="../img/QQ.jpg"/>
+								</div>
+							</div>
+						</div>
+						<div class="goods_xq">
+							<div class="goods_xq_l">
+								<div class="goods_xq_title">浏览此商品最终购买</div>
+								<div class="goods_bug_l">
+									
+								</div>
+							</div>
+							<div class="goods_xq_t">
+								<p><img src="../img/bg/productdis_Newegggg.jpg"/></p>
+							</div>
+						</div>
+						<div class="resetfloat"></div>
+					</div>
+					<div class="tab2 tabl" style="display: none;">
+						<div class="liuyan">
+							<div class="liuyan_l">
+								<a href="javascript:;"><img src="../img/userAvtar_7.png"/></a>
+								<a href="javascript:;">谜一样的男人</a>
+								<span>火星</span>
+							</div>
+							<div class="liuyan_r">
+								<p>相机不错，成像很好，镜头好，很是满意！</p>
+								<p>  列表：24-105套机    </p>
+								<p>2016-5-30</p>
+							</div>
+						</div>
+						<div class="liuyan">
+							<div class="liuyan_l">
+								<a href="javascript:;"><img src="../img/userAvtar_7.png"/></a>
+								<a href="javascript:;">谜一样的男人</a>
+								<span>火星</span>
+							</div>
+							<div class="liuyan_r">
+								<p>相机不错，成像很好，镜头好，很是满意！</p>
+								<p>  列表：24-105套机    </p>
+								<p>2016-5-30</p>
+							</div>
+						</div>
+						<div class="liuyan">
+							<div class="liuyan_l">
+								<a href="javascript:;"><img src="../img/userAvtar_7.png"/></a>
+								<a href="javascript:;">谜一样的男人</a>
+								<span>火星</span>
+							</div>
+							<div class="liuyan_r">
+								<p>相机不错，成像很好，镜头好，很是满意！</p>
+								<p>  列表：24-105套机    </p>
+								<p>2016-5-30</p>
+							</div>
+						</div>
+						<div class="liuyan">
+							<div class="liuyan_l">
+								<a href="javascript:;"><img src="../img/userAvtar_7.png"/></a>
+								<a href="javascript:;">谜一样的男人</a>
+								<span>火星</span>
+							</div>
+							<div class="liuyan_r">
+								<p>相机不错，成像很好，镜头好，很是满意！</p>
+								<p>  列表：24-105套机    </p>
+								<p>2016-5-30</p>
+							</div>
+						</div>
+						<div class="liuyan">
+							<div class="liuyan_l">
+								<a href="javascript:;"><img src="../img/userAvtar_7.png"/></a>
+								<a href="javascript:;">谜一样的男人</a>
+								<span>火星</span>
+							</div>
+							<div class="liuyan_r">
+								<p>相机不错，成像很好，镜头好，很是满意！</p>
+								<p>  列表：24-105套机    </p>
+								<p>2016-5-30</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab3 tabl" style="display: none;">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><th colspan="2" class="title">类型</th></tr><tr><th>品牌</th><td>CANON 佳能</td></tr><tr><th>型号</th><td>EOS 6D+24-105mm</td></tr><tr><th>套机类型</th><td>单镜头套机</td></tr><tr><th>兼容镜头</th><td>佳能EF系列镜头（EF-S、EF-M镜头除外）
+（35毫米换算镜头焦距与镜头上的标示相同）</td></tr><tr><th>镜头卡口</th><td>佳能EF卡口</td></tr><tr><th>颜色</th><td>黑色</td></tr><tr><th colspan="2" class="title">规格</th></tr><tr><th>液晶屏尺寸</th><td>3.0英寸</td></tr><tr><th>产地明细</th><td>日本</td></tr><tr><th>触摸屏</th><td>否</td></tr><tr><th>WIFI功能</th><td>支持WIFI</td></tr><tr><th colspan="2" class="title">影像感应器</th></tr><tr><th>影像感应器类型</th><td>CMOS</td></tr><tr><th>影像感应器尺寸</th><td>约35.8×23.9毫米</td></tr><tr><th>有效像素</th><td>约2020万像素</td></tr><tr><th>除尘功能</th><td>自动、手动、添加除尘数据</td></tr><tr><th colspan="2" class="title">记录系统</th></tr><tr><th>文件格式</th><td>JPEG、RAW （14位，佳能原创）
+可以同时记录RAW+JPEG</td></tr><tr><th>记录像素</th><td>L（大）：约2000万像素（5472×3648）
+M（中） ：约890万像素（3648×2432）
+S1（小1）：约500万像素（2736×1824）
+S2（小2）：约250万像素（1920×1280）
+S3（小3）：约35万像素（720×480）
+RAW ：约2000万像素（5472×3648）
+M-RAW ：约1100万像素（4104×2736）
+S-RAW ：约500万像素（2736×1824）</td></tr><tr><th>存储介质</th><td>SD存储卡、SDHC存储卡、SDXC存储卡
+※兼容UHS-I</td></tr><tr><th colspan="2" class="title">图像处理</th></tr><tr><th>照片风格</th><td>自动、标准、人像、风光、中性、可靠设置、单色、用户定义1-3</td></tr><tr><th>白平衡</th><td>自动、预设（日光、阴影、阴天、钨丝灯、白色荧光灯、闪光灯）、用户自定义、
+色温设置（约2500-10000K）、具备白平衡矫正和白平衡包围曝光功能
+※支持闪光色温信息传输</td></tr><tr><th colspan="2" class="title">取景器</th></tr><tr><th>取景器类型</th><td>眼平五棱镜</td></tr><tr><th>视野率</th><td>垂直/水平方向约97%（眼点约为21毫米）</td></tr><tr><th>放大倍率</th><td>约0.71倍（-1m-1，使用50mm镜头对无限远处对焦）</td></tr><tr><th>内置屈光度调节</th><td>约-3.0 - +1.0m-1（dpt）</td></tr><tr><th>对焦屏</th><td>随机配备Eg-A II，可更换</td></tr><tr><th>眼点</th><td>约21毫米（自目镜透镜中央起-1m-1）</td></tr><tr><th colspan="2" class="title">自动对焦</th></tr><tr><th>自动对焦类型</th><td>TTL辅助影像重合，相位检测</td></tr><tr><th>自动对焦点</th><td>全11点
+中央：对应F5.6光束的十字型自动对焦＋对应F2.8光束检测纵向线条的自动对焦
+中央上下：对应F5.6光束检测纵向线条的自动对焦
+其他：对应F5.6光束检测横向线条的自动对焦</td></tr><tr><th>对焦模式</th><td>单次自动对焦、人工智能伺服自动对焦、人工智能自动对焦、手动对焦（MF）</td></tr><tr><th colspan="2" class="title">曝光控制</th></tr><tr><th>测光模式</th><td>63区TTL全开光圈测光
+评价测光（与所有自动对焦点联动）
+局部测光（取景器中央约8.0%的面积）
+点测光（取景器中央约3.5%的面积）
+中央重点平均测光</td></tr><tr><th>测光表范围</th><td>EV 1～20（23℃、使用EF 50mm f/1.4 USM镜头、ISO 100）</td></tr><tr><th>曝光控制（即曝光类型）</th><td>程序自动曝光（场景智能自动、创意自动、特殊场景模式(人像、风光、微距、运动、夜景人像、手持夜景、HDR逆光控制)、程序）、快门优先自动曝光、光圈优先自动曝光、手动曝光、B门曝光</td></tr><tr><th>ISO感光度</th><td>基本拍摄区模式：在ISO 100～12800之间自动设置
+※风光：在ISO 100～1600之间自动设置、手持夜景：在ISO 100～25600之间自动设置
+P、Tv、Av、M、B：自动ISO、ISO 100～25600（以1/3级或整级为单位）、或ISO感光度扩展到L（相当于ISO 50）、H1（相当于ISO 51200）、H2（相当于ISO 102400）</td></tr><tr><th>曝光补偿</th><td>手动：在±5级间以1/3或1/2级为单位调节
+自动包围曝光：在±3级间以1/3或1/2级为单位调节</td></tr><tr><th colspan="2" class="title">快门</th></tr><tr><th>快门类型</th><td>电子控制焦平面快门</td></tr><tr><th>快门速度</th><td>1/4000秒至30秒、B门（总快门速度范围。可用范围随拍摄模式各异。）
+闪光同步速度1/180秒</td></tr><tr><th colspan="2" class="title">驱动系统</th></tr><tr><th>拍摄模式</th><td>单拍、连拍、静音单拍、静音连拍、10秒自拍/遥控、2秒自拍/遥控</td></tr><tr><th>连拍速度</th><td>连拍：最高约4.5张/秒
+静音连拍：最高约3张/秒</td></tr><tr><th>最大连拍数量</th><td>JPEG大/优：约73张（约1250张）
+RAW：约14张（约17张）
+RAW+JPEG大/优：约7张（约8张）
+※ 数字基于佳能测试标准（ISO 100和标准照片风格），使用8GB存储卡。
+※ 括号中的数值适用于基于佳能测试标准的UHS-I兼容8GB存储卡。</td></tr><tr><th colspan="2" class="title">闪光灯</th></tr><tr><th>兼容闪光灯</th><td>EX系列闪光灯</td></tr><tr><th>闪光曝光补偿</th><td>在±3级间以1/3或1/2级为单位调节</td></tr><tr><th colspan="2" class="title">短片拍摄</th></tr><tr><th>短片格式</th><td>MOV</td></tr><tr><th>文件尺寸</th><td>1920×1080（全高清）：30p/25p/24p
+1280×720（高清）：60p/50p
+640×480（标清）：30p/25p
+※30p：29.97帧/秒，25p：25.00帧/秒，24p：23.976帧/秒，60p：59.94帧/秒，50p：50.00帧/秒</td></tr><tr><th>短片对焦</th><td>与实时显示拍摄的对焦相同</td></tr><tr><th>短片测光模式</th><td>使用图像感应器进行中央重点平均测光和评价测光
+※由对焦模式自动设置</td></tr><tr><th>短片测光范围</th><td>EV 0～20（23℃、使用EF 50mm f/1.4 USM镜头、ISO 100）</td></tr><tr><th>短片曝光控制</th><td>短片用程序自动曝光和手动曝光</td></tr><tr><th colspan="2" class="title">液晶屏</th></tr><tr><th>液晶屏类型</th><td>TFT彩色液晶监视器</td></tr><tr><th>尺寸和分辨率</th><td>宽屏3.0″（3:2），约104万点</td></tr><tr><th>亮度调节</th><td>手动（7级）</td></tr><tr><th>回放功能</th><td>支持</td></tr><tr><th colspan="2" class="title">接口</th></tr><tr><th>输出接口</th><td>模拟视频（兼容NTSC/PAL）/立体声音频输出
+计算机通讯、直接打印（Hi-Speed USB 或等同规格）</td></tr><tr><th>输入接口</th><td>3.5毫米直径立体声微型插孔</td></tr><tr><th>HDMI高清端子</th><td>C型（自动切换分辨率）、CEC兼容</td></tr><tr><th>遥控</th><td>与N3型遥控器兼容</td></tr><tr><th colspan="2" class="title">电源</th></tr><tr><th>电池型号</th><td>电池LP-E6（1节）
+※可以通过交流电适配器套装ACK-E6使用交流电。
+※安装电池盒兼手柄BG-E13时，可以使用5号（AA/LR6）电池。</td></tr><tr><th colspan="2" class="title">尺寸和重量</th></tr><tr><th>尺寸(mm)</th><td>144.5×110.5×71.2毫米</td></tr><tr><th>重量(g)</th><td>约750克，约675克（仅机身）</td></tr><tr><th colspan="2" class="title">工作环境</th></tr><tr><th>工作温度范围(℃)</th><td>0℃～40℃</td></tr><tr><th>工作湿度范围</th><td>85％或更小</td></tr><tr><th colspan="2" class="title">套机镜头I</th></tr><tr><th>镜头名称</th><td>EF 24-105mm f/4L IS USM 标准变焦镜头</td></tr><tr><th>焦距范围</th><td>24-105mm</td></tr><tr><th>镜头结构</th><td>12组15片</td></tr><tr><th>光圈叶片数</th><td>9片（圆形光圈）</td></tr><tr><th>最近对焦距离(m)</th><td>约0.38米(微距模式时约0.2米)</td></tr><tr><th>滤镜口径(mm)</th><td>77毫米</td></tr><tr><th>镜头放大倍率</th><td>约0.21倍(微距模式时约0.7倍)</td></tr><tr><th>镜头尺寸(mm)</th><td>约 83.4×93毫米</td></tr><tr><th>镜头重量(g)</th><td>约600克</td></tr><tr><th colspan="2" class="title">其他</th></tr><tr><th>列表</th><td>24-105套机</td></tr></tbody></table>
+					</div>
+					<div class="tab4 tabl" style="display: none;">
+						<table class="pro_table_t1 mb40" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        
+        
+            <tr><th class="title bxtk_cnt_title" colspan="2">品牌保修信息：</th></tr>      
+            <tr><th class="th_all bxtk_cnt" colspan="2"><li>本产品全国联保，享受三包服务，质保期1年。</li>
+<li>如因非人为的质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受三包服务》7日内退货，15日内换货，15日以上质保期内免费维修。 </li>
+<li>售后服务电话：4006-222-666</li>
+<li>品牌官方网站：http://www.canon.com.cn</li>
+<li>品牌在各地售后服务中心的联系方式：http://www.canon.com.cn/support/repair/index.html</li>
+
+<li>注：因产品批次不同，如客户收到的货物与网站图片、包装信息不一致，请以实物包装信息为主。新蛋确保为原厂正品！若产品信息未能及时更新，请谅解！</li></th></tr>
+        
+        
+            <tr><th class="title" colspan="2">新蛋标准售后政策</th></tr>      
+            <tr>
+                <th class="th_all" colspan="2">
+                    <p></p><ul>
+<li>退货期限：自收到商品起7日内可退货</li>
+<li>换货期限：自收到商品起15日内可换货</li>
+</ul><p></p>
+                    <p>1. 如商品出现国家《三包》法规中所规定的非人为质量问题，符合以下条件，可申请退货或换货：<br>
+A.在7日内（退货）或15日内（换货）至生产厂商的售后服务中心开具证明商品有质量问题的检测报告（如售后服务中心无法提供检测报告，则需提供商品检测或故障单）<br>
+B.商品外包装完整未损坏，商品及其标配配件、赠品（如购买时有赠品）、说明书、保修凭证和发票均齐全（如申请退换货的商品为成套商品中的一个商品如礼盒、礼包，则需退回此整套商品）<br>
+2. 如商品无质量问题并符合以下条件，自客户收到商品起7日内可申请退货：<br>
+A. 商品未拆封使用，依旧保持新蛋网出售时的原质原样，不影响新蛋网第二次销售；<br>
+B. 商品外包装完整未损坏，商品及其标配配件、赠品（如购买时有赠品）、说明书、保修凭证和发票均齐全（如申请退货的商品为成套商品中的一个商品如礼盒、礼包等，则需退回此整套商品）</p>
+                </th>
+            </tr>
+            <tr><th class="title" colspan="2">品牌信息</th></tr>
+           <tr>
+                <th class="th_all" colspan="2">
+                    <a class="minorFunc" href="http://www.newegg.cn/Search.aspx?keyword=%bc%d1%c4%dc" title="佳能(Canon)">
+                        [查看佳能(Canon)的其他商品]
+                    </a>
+                </th>
+            </tr>
+        
+    </tbody>
+  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="xiaoji" style="display: none;">
+			<img src="../img/bg/ToTop_Normal.gif"/>
+		</div>
+		<!--底部-->
+		<div class="resetfloat"></div>
+		<div class="disno" style="display: none;">
+			
+		</div>
+		<div id="footer">
+			<script type="text/javascript">
+				$.ajax({
+					url:"common/footer.html",
+					async:false,
+					type:"get",
+					dataType:"html",
+					success:function(msg){
+						$("#footer").html(msg)
+					}
+				})					
+			</script>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var detail = $.cookie("chanpin")
+				var nn = JSON.parse(detail);
+				
+					$.get("../data/index.json",function(msg){						
+						var msg = msg.chanpin
+						var x=0
+						for (var i in msg) {
+//							alert(msg[i].img+"|"+nn.src)
+							if(msg[i].img==nn.src){
+									$(".goods_xx").find("h1").html(msg[i].title)
+									$(".goods_xx").find("p").html(msg[i].title)
+									$("title").html(msg[i].title)
+									$(".goods_q").html(msg[i].price)
+									$(".disno").html(msg[i].img)
+									$(".jqzoom").html("<img jqimg="+msg[i].cp0.img0+" src="+msg[i].cp0.img0+"/>")
+									$(".goods_xq_t").html("<img src="+msg[i].cp0.img.aa+">")
+									for (var z in msg[i].cp0) {
+										if (z!="img") {
+											$(".items ul").append("<li></li>")
+											$(".items ul").find("li").eq(x).html("<img jqimg="+msg[i].cp0[z]+" src="+msg[i].cp0[z]+" onmousemove='preview(this);'/>")
+											x++													
+										}
+									}
+																	
+								
+							}
+						}
+	
+					})
+				
+//					$.get("../data/product.json",function(msg){
+//						var x = 0
+//						var msg = msg.cp0;
+//						for(var i in msg){
+//							if (z!="img") {
+//								$(".jqzoom").html("<img jqimg="+msg.img0+" src="+msg.img0+"/>")
+//								$(".goods_xq_t").html("<img src="+msg.img.aa+">")
+//								$(".items ul").append("<li></li>")
+//								$(".items ul").find("li").eq(x).html("<img jqimg="+msg[z]+" src="+msg[z]+" onmousemove='preview(this);'/>")
+//								x++
+//							}
+//						}
+//					})	
+			})
+		</script>
+	</body>
+</html>
